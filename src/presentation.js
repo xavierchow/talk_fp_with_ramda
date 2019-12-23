@@ -127,7 +127,13 @@ export default class Presentation extends React.Component {
           color="white"
           lang="js"
           code={require("!raw-loader!./assets/immutability.js")}
-          ranges={[{ loc: [0, 11], title: "yes, a new foo!!" }]}
+          ranges={[
+            {
+              loc: [0, 11],
+              title: "yes, a new foo!!",
+              note: "foo changed as unexpected"
+            }
+          ]}
         />
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={2} caps textColor="secondary">
@@ -170,6 +176,7 @@ export default class Presentation extends React.Component {
             {`
 ## ~~DEMO Time~~
 ## CODE Time!
+http://xavierchow.github.io/2019/01/05/a_step_to_fp/
            `}
           </Markdown>
           <List />

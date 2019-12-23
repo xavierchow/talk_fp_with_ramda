@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp replace.sh build",
     "deploy": "gh-pages --git $(which git) -d build"
   },
   "eslintConfig": {
@@ -30,5 +30,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://xavierchow.github.io/talk_error_handling_in_nodejs/"
+  "homepage": "https://xavierchow.github.io/talk_fp_with_ramda/"
 }
