@@ -15,10 +15,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp replace.sh build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && cp replace.sh build",
+    "predeploy": "npm run build && cd build && ./replace.sh",
     "deploy": "gh-pages --git $(which git) -d build"
   },
   "eslintConfig": {
